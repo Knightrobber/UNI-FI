@@ -1,0 +1,103 @@
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+<script src=https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js></script>
+<script src="app.js"></script>
+<script src="homepageS.js"></script>
+
+<html>
+
+<head>
+	Welcome to UNI-FI
+</head>
+
+<body>
+	<button onclick="signout()"> SignOut</button>
+	<!-- <button onclick="test()">Test</button>
+		Click test and check console output -->
+</body>
+<br />
+<br />
+<!-- <div id="searchWrapper"></div>
+		<input
+			type="text"
+			name="searchBar"
+			id="searchBar"
+			placeholder="search"
+		/>
+	</div>
+	<button onclick="Search()">Running Search</button> -->
+
+<body>
+	<div id="search"></div>
+	<input type="text" name="searchBar" id="searchBar" placeholder="search" />
+	</div>
+	<button onclick="search()">Search</button>
+	<br />
+	<br />
+	<text>Filters:</text>
+	<br />
+	<br />
+	<p>Acceptance rate:</p>
+	<input type="radio" id="acc1" name="accrate" value="10">
+	<label for="acc1">Below 10%</label><br>
+	<input type="radio" id="acc2" name="accrate" value="20">
+	<label for="acc2">Below 20%</label><br>
+	<input type="radio" id="acc3" name="accrate" value="30">
+	<label for="acc3">Below 30%</label><br>
+	<input type="radio" id="acc4" name="accrate" value="40">
+	<label for="acc4">Below 40%</label><br>
+	<input type="radio" id="acc5" name="accrate" value="50">
+	<label for="acc5">Below 50%</label><br>
+	<input type="radio" id="acc6" name="accrate" value="60">
+	<label for="acc6">Below 60%</label><br>
+	<input type="radio" id="acc7" name="accrate" value="70">
+	<label for="acc7">Below 70%</label><br>
+	<input type="radio" id="accany" name="accrate" value="100">
+	<label for="accany">Any</label>
+
+
+	<br>
+
+	<p>Annual Tuition Fee:</p>
+	<input type="radio" id="tut1" name="tuition" value="10000">
+	<label for="tut1">Below $10,000</label><br>
+	<input type="radio" id="tut2" name="tuition" value="20000">
+	<label for="tut2">Below $20,000</label><br>
+	<input type="radio" id="tut3" name="tuition" value="30000">
+	<label for="tut3">Below $30,000</label><br>
+	<input type="radio" id="tut4" name="tuition" value="40000">
+	<label for="tut4">Below $40,000</label><br>
+	<input type="radio" id="tut5" name="tuition" value="50000">
+	<label for="tut5">Below $50,000</label><br>
+	<input type="radio" id="tut6" name="tuition" value="60000">
+	<label for="tut6">Below $60,000</label><br>
+	<input type="radio" id="tut7" name="tuition" value="70000">
+	<label for="tut7">Below $70,000</label><br>
+	<input type="radio" id="tut8" name="tuition" value="80000">
+	<label for="tut8">Below $80,000</label><br>
+	<input type="radio" id="tut9" name="tuition" value="90000">
+	<label for="tut9">Below $90,000</label><br>
+	<input type="radio" id="tut10" name="tuition" value="100000">
+	<label for="tut10">Below $100,000</label><br>
+	<input type="radio" id="tutany" name="tuition" value="10000000">
+	<label for="tutany">Any</label>
+
+	<br>
+
+	<p>Annual Living Expenses:</p>
+	<input type="radio" id="le1" name="livingexp" value="10000">
+	<label for="le1">Below $10,000</label><br>
+	<input type="radio" id="le2" name="livingexp" value="20000">
+	<label for="le2">Below $20,000</label><br>
+	<input type="radio" id="le3" name="livingexp" value="30000">
+	<label for="le3">Below $30,000</label><br>
+	<input type="radio" id="le4" name="livingexp" value="10000000">
+	<label for="le4">Any</label><br>
+	<!-- <textarea id="searchres" name="searchres" rows="4" cols="50">
+		Search Results
+		</textarea> -->
+</body>
+
+
+
+</html>

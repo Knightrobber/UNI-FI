@@ -16,14 +16,14 @@ __webpack_require__.r(__webpack_exports__);
 var _jsxFileName = "C:\\Users\\Sajal Ganjewala\\Desktop\\uni-fi\\pages\\index.js";
 
 
-function HomePage() {
+function homepageS() {
   return /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
     children: [/*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])(_components_navBar__WEBPACK_IMPORTED_MODULE_1__["default"], {}, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 5,
       columnNumber: 17
     }, this), /*#__PURE__*/Object(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__["jsxDEV"])("div", {
-      children: "Homepage!"
+      children: "homepageS!"
     }, void 0, false, {
       fileName: _jsxFileName,
       lineNumber: 6,
@@ -36,12 +36,12 @@ function HomePage() {
   }, this);
 }
 
-_c = HomePage;
-/* harmony default export */ __webpack_exports__["default"] = (HomePage);
+_c = homepageS;
+/* harmony default export */ __webpack_exports__["default"] = (homepageS);
 
 var _c;
 
-$RefreshReg$(_c, "HomePage");
+$RefreshReg$(_c, "homepageS");
 
 ;
     var _a, _b;

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0 auto;
+        max-width: 800px;
+        padding: 0 20px;
+      }
+
+      #container {
+        border: 2px solid #dedede;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      #container-dark {
+        border: 2px solid #dedede;
+        background-color: #dc143c;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      .container::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .container img {
+        float: left;
+        max-width: 60px;
+        width: 100%;
+        margin-right: 20px;
+        border-radius: 50%;
+      }
+
+      .container img.right {
+        float: right;
+        margin-left: 20px;
+        margin-right: 0;
+      }
+
+      .time-right {
+        float: right;
+        color: #aaa;
+      }
+
+      .time-left {
+        float: left;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unifi Chat</h1>
+    <label for="w3review">Chats</label>
+    <!-- <textarea id="textDisp" name="w3review" rows="35" cols="50"> </textarea> -->
+    <br /><br />
+    <div id="chatDisplay"></div>
+    <form id="chatForm">
+      <input type="text" value="chat goes here" />
+      <input type="text" value="flag" />
+    </form>
+    <button onclick="sendMessage()">SEND</button>
+    
+  </body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/8.3.3/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-database.js"></script>
+<script src=https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js></script>
+<script src = "../app.js" ></script>
+<script src = "messaging.js"></script>
+

@@ -5,7 +5,7 @@ function login(){
     firebase.auth().signInWithEmailAndPassword(email,password).then(function(user){
 if(user){
     console.log(user.email);
-    window.location.href = "./homepage.html"
+    window.location.href = "./homepageS.html"
 }
 
 
@@ -24,7 +24,8 @@ function signUp(){
         firebase.auth().signInWithEmailAndPassword(email,password).then(function(user){
             if(user){
                 console.log(user.email)
-                window.location.href = "./homepage.html"
+                window.location.href = "./homepageS.html"
+                //window.location.href = "./Rishika/homepageS.html"
             }
         }).catch(function(error){
             window.alert("Error: " + error.message);

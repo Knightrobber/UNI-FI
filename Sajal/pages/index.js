@@ -1,12 +1,12 @@
 import NavBar from "../components/navBar";
 
-function HomePage() {
+function homepageS() {
 	return (
 		<div>
 			<NavBar />
-			<div>Homepage!</div>
+			<div>homepageS!</div>
 		</div>
 	);
 }
 
-export default HomePage;
+export default homepageS;
